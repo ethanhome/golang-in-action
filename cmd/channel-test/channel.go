@@ -39,6 +39,12 @@ go func() {
     }
     close(squares)
 }()
+
+
+类型chan<- int表示一个只发送int的channel，只能发送不能接收。
+相反，类型<-chan int表示一个只接收int的channel，只能接收不能发送。
+（箭头<-和关键字chan的相对位置表明了channel的方向。）
+
 */
 
 func main() {
